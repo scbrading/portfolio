@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,10 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  windowWidth$: number;
 
-  constructor() { }
+  @HostListener('window:resize', ['$event'])
+  onResize(event) {
+    this.windowWidth$ = event.target.innerWidth;
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.windowWidth$ = window.innerWidth;
   }
 
 }
