@@ -7,6 +7,11 @@ import { HeaderComponent } from './header/header.component';
 import { IdCardComponent } from './id-card/id-card.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
+import { BannerComponent } from './banner/banner.component';
+import { ContentComponent } from './content/content.component';
+import { FooterComponent } from './footer/footer.component';
+import { CopyrightComponent } from './copyright/copyright.component';
+import { BackToTopComponent } from './back-to-top/back-to-top.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { SocialMediaComponent } from './social-media/social-media.component';
     HeaderComponent,
     IdCardComponent,
     NavigationComponent,
-    SocialMediaComponent
+    SocialMediaComponent,
+    BannerComponent,
+    ContentComponent,
+    FooterComponent,
+    CopyrightComponent,
+    BackToTopComponent
   ],
   imports: [
     BrowserModule,
