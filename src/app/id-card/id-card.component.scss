@@ -1,0 +1,27 @@
+:host {
+  position: relative;
+}
+
+img {
+  float: left;
+  width: 75px;
+}
+
+h1, p {
+  margin-left: 85px;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+p {
+  font-size: 17px;
+  font-weight: 400;
+  color: #A3A3A3;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 0;
+}
