@@ -1,3 +1,5 @@
+@import "../../styles";
+
 :host {
   grid-area: navigation;
 
@@ -25,7 +27,7 @@
       }
     }
 
-    @media (max-width: 650px) {
+    @media (max-width: $nav-break-1) {
       text-align: right;
       display: flex;
       flex-direction: column;
@@ -38,7 +40,7 @@
       a {
         display: block;
 
-        @media (max-width: 370px) {
+        @media (max-width: $nav-break-2) {
           font-size: 16px;
         }
       }

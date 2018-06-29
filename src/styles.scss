@@ -1,52 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/* Colors */
+$white: #fff;
+$black: #000;
+$banner-blue: #4169E1;
+$banner-gray: #CCCCCC;
+$navlink-active-gray: #313131;
+$navlink-gray: #606060;
 
-body {
-  height: 100vh;
-  width: 100vw;
-  background-color: #f3f3f3;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-}
-
-div#app-container {
-  height: 100vh;
-  display: grid;
-  grid-template-rows: 140px auto 100px;
-  //grid-template-areas: "header" "banner" "content" "footer";
-  //background-color: maroon;
-
-  header {
-    position: relative;
-    max-width: 1280px;
-    width: 100%;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 20px 185px 1fr auto 20px;
-    grid-template-areas: ". id-card navigation social-media .";
-    align-items: center;
-
-    @media (max-width: 760px) {
-      grid-template-columns: 20px 185px 1fr 20px;
-      grid-template-areas: ". id-card navigation .";
-    }
-
-
-
-
-
-  }
-
-
-
-
-  main {
-    display: grid;
-    grid-template-rows: auto auto;
-  }
-
-  footer {
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
-
-}
+/* Break Points */
+$header-break-1: 760px;
+$nav-break-1: 650px;
+$nav-break-2: 370px;
+$banner-break-1: 750px;
+$banner-break-2: 530px;
+$banner-break-3: 420px;
+$banner-break-4: 370px;
