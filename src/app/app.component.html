@@ -9,8 +9,10 @@
     <app-content></app-content>
   </main>
   <footer>
-    <app-social-media *ngIf="width$ <= 760"></app-social-media>
-    <app-copyright></app-copyright>
-    <app-back-to-top></app-back-to-top>
+    <div class="footer-container">
+      <app-social-media *ngIf="width$ <= 760"></app-social-media>
+      <app-copyright></app-copyright>
+      <app-back-to-top></app-back-to-top>
+    </div>
   </footer>
 </div>

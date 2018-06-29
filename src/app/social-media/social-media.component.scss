@@ -1,16 +1,37 @@
+@import "../../styles";
+
 :host {
   text-align: right;
   grid-area: social-media;
   align-self: start;
 
+
+  //$footer-break-2: 760px;
+  @media (max-width: $footer-break-2) {
+    text-align: left;
+  }
+
+  @media (max-width: 375px) {
+    align-self: center;
+  }
 }
 
 img {
-  //float: right;
   margin-right: 30px;
 
   &:last-child {
     margin-right: 0;
   }
+
+  @media (max-width: $footer-break-2) {
+    margin: 20px 0 0 20px;
+  }
+
+  @media (max-width: 375px) {
+    display: block;
+    margin: 10px;
+  }
+
+
 }
 

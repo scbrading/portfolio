@@ -4,11 +4,11 @@ body {
   height: 100vh;
   width: 100vw;
   background-color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
 }
 
 div#app-container {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   height: 100vh;
   display: grid;
   grid-template-rows: 140px auto 100px;
@@ -25,26 +25,44 @@ div#app-container {
     grid-template-areas: ". id-card navigation social-media .";
     align-items: center;
 
+    //$header-break-1: 760px;
     @media (max-width: $header-break-1) {
       grid-template-columns: 20px 185px 1fr 20px;
       grid-template-areas: ". id-card navigation .";
     }
   }
 
-
-
-
   main {
     display: grid;
     grid-template-rows: auto auto;
-
-
-
   }
 
   footer {
+    background-color: $footer-background;
+    color: white;
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 900px 1fr;
+    grid-template-areas: ".  footer-container .";
+
+    div.footer-container {
+      grid-area: footer-container;
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: ". copyright back-to-top";
+      align-items: center;
+
+      //$footer-break-2: 760px;
+      @media (max-width: $footer-break-2) {
+        grid-template-areas: "social-media copyright back-to-top";
+      }
+    }
+
+    //$footer-break-1: 900px;
+    @media (max-width: $footer-break-1) {
+      grid-template-columns: 100vw;
+      grid-template-areas: "footer-container";
+    }
+
   }
 
 }

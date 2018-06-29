@@ -1,0 +1,16 @@
+@import "../../styles";
+
+:host {
+  grid-area: copyright;
+  text-align: center;
+
+  p {
+    font-size: 22px;
+    font-weight: 300;
+
+    //$copyright-break-1: 680px;
+    @media (max-width: $copyright-break-1) {
+      font-size: 18px;
+    }
+  }
+}
