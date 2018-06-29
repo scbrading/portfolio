@@ -1,7 +1,16 @@
 :host {
   text-align: right;
+  grid-area: social-media;
+  align-self: start;
+
 }
+
 img {
   //float: right;
-  margin-left: 30px;
+  margin-right: 30px;
+
+&:last-child {
+  margin-right: 0;
 }
+}
+

@@ -1,17 +1,15 @@
 <div id="app-container">
   <header>
     <app-id-card></app-id-card>
-    <nav>
-      <app-navigation></app-navigation>
-    </nav>
-    <app-social-media></app-social-media>
+    <app-navigation></app-navigation>
+    <app-social-media *ngIf="width$ > 760"></app-social-media>
   </header>
   <main>
     <app-banner></app-banner>
     <app-content></app-content>
   </main>
   <footer>
-    <app-social-media></app-social-media>
+    <app-social-media *ngIf="width$ <= 760"></app-social-media>
     <app-copyright></app-copyright>
     <app-back-to-top></app-back-to-top>
   </footer>
