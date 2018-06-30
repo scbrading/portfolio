@@ -8,7 +8,13 @@
     margin-right: 10px;
   }
 
-  &.compact > button > span{
-    display: none;
+  &.compact > button {
+    img {
+      width: 40px;
+    }
+
+    span {
+      display: none;
+    }
   }
 }
