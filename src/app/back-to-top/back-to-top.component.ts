@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BackToTopComponent implements OnInit {
 
-  constructor() { }
+  // noinspection JSMethodCanBeStatic
+  protected scrollToTop() {
+    window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
+  }
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

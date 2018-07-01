@@ -10,6 +10,11 @@ import { BannerComponent } from './banner/banner.component';
 import { ContentComponent } from './content/content.component';
 import { CopyrightComponent } from './copyright/copyright.component';
 import { BackToTopComponent } from './back-to-top/back-to-top.component';
+import { FromIdeaToProdComponent } from './from-idea-to-prod/from-idea-to-prod.component';
+import { HomeBannerComponent } from './home-banner/home-banner.component';
+import { HomeContentComponent } from './home-content/home-content.component';
+import { HomeComponent } from './home/home.component';
+import { BannerContainerComponent } from './banner-container/banner-container.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +25,12 @@ import { BackToTopComponent } from './back-to-top/back-to-top.component';
     BannerComponent,
     ContentComponent,
     CopyrightComponent,
-    BackToTopComponent
+    BackToTopComponent,
+    FromIdeaToProdComponent,
+    HomeBannerComponent,
+    HomeContentComponent,
+    HomeComponent,
+    BannerContainerComponent
   ],
   imports: [
     BrowserModule,

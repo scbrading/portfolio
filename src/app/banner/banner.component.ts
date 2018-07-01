@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-banner',
@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./banner.component.scss']
 })
 export class BannerComponent implements OnInit {
+  @Input() text: string;
+  @Input() imageFilename: string;
+  @Input() imageQuality: string;
 
-  constructor() { }
+  backgroundStyle$: string;
+
+  constructor() {
+  }
 
   ngOnInit() {
+    this.backgroundStyle$ = 'url("../../assets/' + this.imageQuality + '/' + this.imageFilename + '")';
   }
 
 }
