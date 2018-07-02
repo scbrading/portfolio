@@ -6,30 +6,3 @@
   grid-template-areas: ". content .";
 }
 
-section {
-  grid-area: content;
-  max-width: 720px;
-  margin:auto;
-  padding: 30px;
-
-  h1 {
-    margin-left: -35px;
-    margin-top: 10px;
-    transition: margin-left 500ms;
-
-    //$content-break-1: 900px;
-    @media (max-width: $content-break-1) {
-      margin-left: -5px;
-    }
-
-    //$content-break-1: 500px;
-    @media (max-width: $content-break-2) {
-      font-size: 26px;
-    }
-
-    //$content-break-1: 400px;
-    @media (max-width: $content-break-3) {
-      font-size: 21px;
-    }
-  }
-}

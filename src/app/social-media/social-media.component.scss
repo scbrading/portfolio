@@ -16,18 +16,15 @@
   }
 }
 
-img {
+a {
   margin-right: 30px;
 
   &:last-child {
     margin-right: 0;
   }
 
+  //$footer-break-2: 760px;
   @media (max-width: $footer-break-2) {
-    margin: 10px 0 0 10px;
-  }
-
-  @media (max-width: 375px) {
     display: block;
     margin: 10px;
   }
