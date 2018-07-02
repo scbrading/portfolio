@@ -32,10 +32,10 @@
         }
 
         div.banner-img {
-          //background: url("../../../src/assets/3x/from_idea_to_production_bannerxxhdpi.png") center no-repeat;
           height: 100%;
           max-width: 530px;
           background-size: contain;
+          background-repeat: no-repeat;
           margin: auto;
 
           //$banner-break-2: 530px;
@@ -56,7 +56,6 @@
             width: 80%;
             position: relative;
             top: 20px;
-            //vertical-align: center;
 
             //$banner-break-2: 530px;
             @media (max-width: $banner-break-2) {
