@@ -39,7 +39,7 @@ div#app-container {
       display: grid;
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas: ". copyright back-to-top";
-      align-items: center;
+      //align-items: center;
 
       //$footer-break-2: 760px;
       @media (max-width: $footer-break-2) {
@@ -49,8 +49,17 @@ div#app-container {
 
     //$footer-break-1: 900px;
     @media (max-width: $footer-break-1) {
-      grid-template-columns: 100vw;
+      grid-template-columns: 100%;
       grid-template-areas: "footer-container";
     }
   }
+
+  &.safari-mobile {
+    grid-template-rows: 140px auto 164px;
+
+    div.footer-container {
+      //align-items: start;
+    }
+  }
+
 }

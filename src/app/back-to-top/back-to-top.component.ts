@@ -9,18 +9,15 @@ export class BackToTopComponent implements OnInit {
 
   // noinspection JSMethodCanBeStatic
   scrollToTop() {
-    // window.scrollTo({top: 0, left: 0, behavior: 'smooth'});
-    // document.querySelector('div').scrollTo(0, 0);
-    // document.body.scrollTop = 0;
-    const scrollToTop = window.setInterval(() => {
+
+    const scrolling = window.setInterval(() => {
       const pos = window.pageYOffset;
       if (pos > 0) {
-        window.scrollTo(0, pos - 10); // how far to scroll on each step
+        window.scrollTo(0, pos - 100); // how far to scroll on each step
       } else {
-        window.clearInterval(scrollToTop);
+        window.clearInterval(scrolling);
       }
     }, 16);
-    console.log('run');
   }
 
   constructor() {

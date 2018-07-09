@@ -1,4 +1,4 @@
-<div id="app-container">
+<div #appContainer id="app-container" [ngClass]="{'safari-mobile': isSafariMobile$}">
   <header>
     <app-id-card></app-id-card>
     <app-navigation></app-navigation>
