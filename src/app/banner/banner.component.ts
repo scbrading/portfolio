@@ -8,8 +8,6 @@ import { Component, OnInit, Input, OnChanges } from '@angular/core';
 export class BannerComponent implements OnInit, OnChanges {
   @Input() text: string;
   @Input() parent: string;
-  @Input() imageFilename: string;
-  @Input() imageQuality: string;
 
   backgroundStyle$: string;
 
@@ -60,7 +58,7 @@ export class BannerComponent implements OnInit, OnChanges {
 
   bannerImageUrls$: object[] = [{}];
 
-  constructBannerImageUrls(collectionArray: object[]) {
+  constructBannerImageUrls(collectionArray) {
     for (let i = 0; i < collectionArray.length; i++) {
       const temporaryObject = {url: '', active: false};
 
