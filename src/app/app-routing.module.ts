@@ -6,7 +6,6 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { EsBordersComponent } from './portfolio/es-borders/es-borders.component';
 import { SesraComponent } from './portfolio/sesra/sesra.component';
-import { SpecialProjectsComponent } from './portfolio/special-projects/special-projects.component';
 import { PortfolioOverviewComponent } from './portfolio/portfolio-overview/portfolio-overview.component';
 
 const routes: Routes = [
@@ -29,9 +28,6 @@ const routes: Routes = [
       }, {
         path: 'sesra',
         component: SesraComponent
-      }, {
-        path: 'special-projects',
-        component: SpecialProjectsComponent
       }
     ]
   }, {

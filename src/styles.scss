@@ -36,8 +36,19 @@ body {
     margin: auto;
     padding: 30px;
 
+    section:not(:first-of-type) {
+      padding: 20px 0 0 0;
+    }
+
+    div.block-image {
+     text-align: center;
+      img {
+        max-width: 100%;
+      }
+    }
+
     img.logo {
-      margin: 30px 0 15px;
+      margin: 0 0 15px;
       max-width: 80vw;
     }
 
@@ -72,10 +83,22 @@ body {
       line-height: 1.4em;
     }
 
+    h1, h2, h3, h4, h5, h6 {
+      &:first-of-type {
+        margin-top: 0;
+      }
+    }
+
     h1 {
+      font-weight: 600;
       margin-left: -35px;
       margin-top: 10px;
       transition: margin-left 500ms;
+
+      span {
+        font-style: italic;
+        font-weight: 700;
+      }
 
       //$content-break-1: 900px;
       @media (max-width: $content-break-1) {
@@ -92,6 +115,33 @@ body {
         font-size: 21px;
       }
     }
+
+    h2 {
+      font-weight: 500;
+      //margin-bottom: 0;
+
+      span {
+        font-style: italic;
+        font-weight: 600;
+      }
+
+      //$content-break-1: 900px;
+      @media (max-width: $content-break-1) {
+        margin-left: -5px;
+      }
+
+      //$content-break-1: 500px;
+      @media (max-width: $content-break-2) {
+        font-weight: 600;
+        font-size: 23px;
+      }
+
+      //$content-break-1: 400px;
+      @media (max-width: $content-break-3) {
+        font-size: 19px;
+      }
+    }
+
   }
 }
 
