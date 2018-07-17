@@ -1,6 +1,4 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
-import { container } from '@angular/core/src/render3/instructions';
-import { browserDetection } from '@angular/platform-browser/testing/src/browser_util';
 
 @Component({
   selector: 'app-root',
