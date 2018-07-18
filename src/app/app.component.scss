@@ -5,6 +5,14 @@ div#app-container {
   display: grid;
   grid-template-rows: 140px auto 100px;
 
+  &.safari-mobile {
+    grid-template-rows: 140px auto 164px;
+
+    div.footer-container {
+      //align-items: start;
+    }
+  }
+
   header {
     position: relative;
     max-width: 1280px;
@@ -54,12 +62,6 @@ div#app-container {
     }
   }
 
-  &.safari-mobile {
-    grid-template-rows: 140px auto 164px;
 
-    div.footer-container {
-      //align-items: start;
-    }
-  }
 
 }

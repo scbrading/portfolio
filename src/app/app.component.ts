@@ -12,9 +12,6 @@ export class AppComponent implements OnInit {
   backToTopClasses$: string;
   isSafariMobile$: boolean;
 
-  @ViewChild('appContainer')
-  appContainer: ElementRef;
-
   // noinspection JSMethodCanBeStatic
   private browserDetection() {
     // Not 100% reliable for detecting browser type. This is a quick solution. A comprehensive solution can be found later.
@@ -60,7 +57,6 @@ export class AppComponent implements OnInit {
     this.updateClasses();
     this.testForSafariMobile();
   }
-
 
   updateClasses() {
     if (this.width$ < 480) {

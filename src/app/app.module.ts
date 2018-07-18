@@ -24,6 +24,7 @@ import { PortfolioOverviewContentComponent } from './portfolio/portfolio-overvie
 import { SesraContentComponent } from './portfolio/sesra/sesra-content/sesra-content.component';
 import { EsBordersContentComponent } from './portfolio/es-borders/es-borders-content/es-borders-content.component';
 import { SpecialProjectsContentComponent } from './portfolio/special-projects/special-projects-content/special-projects-content.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -52,6 +53,7 @@ import { SpecialProjectsContentComponent } from './portfolio/special-projects/sp
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
