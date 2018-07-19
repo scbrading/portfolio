@@ -1,4 +1,7 @@
 import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { filter} from 'rxjs/operators';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -6,7 +9,10 @@ import { AfterViewInit, Component, ElementRef, HostListener, OnInit, ViewChild }
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'Clark Brading | Portfolio';
+  subscription: Subscription;
+
+  constructor(private router: Router) {
+  }
 
   width$: number;
   backToTopClasses$: string;
@@ -56,6 +62,12 @@ export class AppComponent implements OnInit {
     this.width$ = window.innerWidth;
     this.updateClasses();
     this.testForSafariMobile();
+
+    this.subscription = this.router.events
+      .pipe(
+        filter(event => event instanceof NavigationEnd)
+      )
+      .subscribe(() => window.scrollTo(0, 0));
   }
 
   updateClasses() {
@@ -71,5 +83,4 @@ export class AppComponent implements OnInit {
     this.width$ = event.target.innerWidth;
     this.updateClasses();
   }
-
 }
