@@ -1,3 +1,30 @@
-img.mobile-app {
-  max-height: 350px;
+img {
+
+  &.mobile-app, &.sesra, &.platform-widget-only, &.single-page {
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, .3);
+    border: 1px solid black;
+  }
+
+  &.mobile-app {
+    max-height: 350px;
+  }
+
+  &.sesra {
+    width: 80%;
+
+    @media (max-width: 600px) {
+      width: 90%;
+    }
+  }
+
+  &.platform-widget-only {
+    width: 80%;
+    border-radius: 7px;
+
+    @media (max-width: 600px) {
+      width: 90%;
+    }
+  }
 }
+
+

@@ -15,37 +15,37 @@ export class BannerComponent implements OnInit, OnChanges {
   bannerImages$: object[] = [
     {
       name: 'home',
-      quality: '3x',
+      quality: '2x',
       type: 'png',
       filename: 'from_idea_to_production_banner'
     },
     {
       name: 'portfolio-overview',
-      quality: '3x',
+      quality: '2x',
       type: 'png',
       filename: 'tools_and_companies_banner'
     },
     {
       name: 'es-borders',
-      quality: '3x',
+      quality: '2x',
       type: 'png',
       filename: '86borders_banner'
     },
     {
       name: 'sesra',
-      quality: '3x',
+      quality: '2x',
       type: 'png',
       filename: 'sesra_banner'
     },
     {
       name: 'special-projects',
-      quality: '3x',
+      quality: '2x',
       type: 'png',
       filename: 'special_projects_banner'
     },
     {
       name: 'contact',
-      quality: '3x',
+      quality: '2x',
       type: 'png',
       filename: 'ideas_spring_out_of_head_banner'
     },
