@@ -16,15 +16,8 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactContentComponent } from './contact/contact-content/contact-content.component';
 import { AboutContentComponent } from './about/about-content/about-content.component';
-import { EsBordersComponent } from './portfolio/es-borders/es-borders.component';
-import { SesraComponent } from './portfolio/sesra/sesra.component';
-import { SpecialProjectsComponent } from './portfolio/special-projects/special-projects.component';
-import { PortfolioOverviewComponent } from './portfolio/portfolio-overview/portfolio-overview.component';
-import { PortfolioOverviewContentComponent } from './portfolio/portfolio-overview/portfolio-overview-content/portfolio-overview-content.component';
-import { SesraContentComponent } from './portfolio/sesra/sesra-content/sesra-content.component';
-import { EsBordersContentComponent } from './portfolio/es-borders/es-borders-content/es-borders-content.component';
-import { SpecialProjectsContentComponent } from './portfolio/special-projects/special-projects-content/special-projects-content.component';
 import { HttpClientModule } from '@angular/common/http';
+import { PortfolioContentComponent } from './portfolio/portfolio-content/portfolio-content.component';
 
 @NgModule({
   declarations: [
@@ -42,14 +35,7 @@ import { HttpClientModule } from '@angular/common/http';
     PortfolioComponent,
     ContactContentComponent,
     AboutContentComponent,
-    EsBordersComponent,
-    SesraComponent,
-    SpecialProjectsComponent,
-    PortfolioOverviewComponent,
-    PortfolioOverviewContentComponent,
-    SesraContentComponent,
-    EsBordersContentComponent,
-    SpecialProjectsContentComponent
+    PortfolioContentComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SesraComponent } from './sesra.component';
+import { PortfolioContentComponent } from './portfolio-content.component';
 
-describe('SesraComponent', () => {
-  let component: SesraComponent;
-  let fixture: ComponentFixture<SesraComponent>;
+describe('PortfolioContentComponent', () => {
+  let component: PortfolioContentComponent;
+  let fixture: ComponentFixture<PortfolioContentComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SesraComponent ]
+      declarations: [ PortfolioContentComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(SesraComponent);
+    fixture = TestBed.createComponent(PortfolioContentComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
